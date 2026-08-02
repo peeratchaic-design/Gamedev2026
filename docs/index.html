@@ -31,12 +31,32 @@
     ul {
       line-height: 1.8;
     }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
+    .lab4-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      margin-top: 8px;
     }
-    a:hover {
-      text-decoration: underline;
+    .lab4-btn,
+    .lab4-link {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .lab4-link {
+      background: #5f6368;
+      font-size: 0.95rem;
+    }
+    .lab4-btn:hover,
+    .lab4-link:hover {
+      text-decoration: none;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -65,10 +85,10 @@
     </ul>
 
     <h2>Lab 4</h2>
-    <ul>
-      <li><a href="game4/game4.html">เล่นเกม 4</a></li>
-      <li><a href="https://drive.google.com/file/d/1hcCVxx0P2peRwOSHDj92z4EkOg1ntkrT/view?usp=sharing" target="_blank" rel="noopener noreferrer">ลิงก์ Google Drive</a></li>
-    </ul>
+    <div class="lab4-actions">
+      <a class="lab4-btn" href="game4/game4.html">เล่นเกม 4</a>
+      <a class="lab4-link" href="https://drive.google.com/file/d/1hcCVxx0P2peRwOSHDj92z4EkOg1ntkrT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Google Drive</a>
+    </div>
 
     <h2>Lab 5</h2>
     <ul>
